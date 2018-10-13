@@ -7,15 +7,15 @@ Cloning the repository (using git bash):
 
 Typical Workflow:
 1. git pull origin          # Pulls latest repository image
--
+.
 2. git branch [name]        # Creates branch <name> using current local repository image
 3. git checkout [branch]    # Checks out branch, meaning any modifications made will be made on this branch
- -
- OR
- -
+.
+OR
+.
 2. git checkout [name]      # Checkout branch you'll be working on
 3. git branch [name]        # Branch off of it (ex name: tutorkats_search_chris_20181013)
--
+.
 4. do your work             
 5. git add [file] [file]                 # Stage files for commit
 6. git status                            # Show summary of staged files
