@@ -7,19 +7,19 @@ Cloning the repository (using git bash):
 
 Typical Workflow:
 1. git pull origin          # Pulls latest repository image
-2. git branch <name>        # Creates branch <name> using current local repository image
-3. git checkout <branch>    # Checks out branch, meaning any modifications made will be made on this branch
+2. git branch [name]        # Creates branch <name> using current local repository image
+3. git checkout [branch]    # Checks out branch, meaning any modifications made will be made on this branch
 4. do your work             
-5. git add <file> <file>                 # Stage files for commit
+5. git add [file] [file]                 # Stage files for commit
 6. git status                            # Show summary of staged files
-7. git commit -m <msg>                   # Commit the branch, meaning update any staged files (locally)
+7. git commit -m [msg]                   # Commit the branch, meaning update any staged files (locally)
 8. git pull --rebase origin <branch>     # Pull the latest copy of the branch (rebase adds your commit on top)
-9. git push origin <branch>
+9. git push origin [branch]
  
 Conflict Handling during push
 1. git status                            # to see what it is
 2. edit files to resolve conflict
-3. git add <file> <file>                 # Stage files
+3. git add [file] [file]                 # Stage files
 4. git rebase --continue                 # Let rebase do the rest
 5. git rebase --abort                    # If you're unsure of what to do
  
