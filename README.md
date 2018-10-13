@@ -7,15 +7,15 @@ Cloning the repository (using git bash):
 
 Typical Workflow:
 1. git pull origin          # Pulls latest repository image
-
+-
 2. git branch [name]        # Creates branch <name> using current local repository image
 3. git checkout [branch]    # Checks out branch, meaning any modifications made will be made on this branch
- 
+ -
  OR
- 
+ -
 2. git checkout [name]      # Checkout branch you'll be working on
 3. git branch [name]        # Branch off of it (ex name: tutorkats_search_chris_20181013)
-
+-
 4. do your work             
 5. git add [file] [file]                 # Stage files for commit
 6. git status                            # Show summary of staged files
@@ -30,7 +30,7 @@ Conflict Handling during push
 4. git rebase --continue                 # Let rebase do the rest
 5. git rebase --abort                    # If you're unsure of what to do
  
-Gitignore
+Gitignore:
 When working on a project, there will probably be a lot of files you will need to modify and commit at once.
 It's generally recommended to commit one file at a time, but thats not always the deal.
 by creating a file in your working directory called ".gitignore" (without quotes), you can add directories and
