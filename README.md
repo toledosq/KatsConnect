@@ -33,3 +33,6 @@ files that are NOT in your .gitignore
 The easiest way to create the file is to navigate to your working directory in git bash and type "touch .gitignore"
 
 There is a lot more to using git, but above are the basics you need to get started. Give it a try.
+
+NOTE:
+Always remember to COMMIT then PUSH when you are done working. God forbid your computer dies or something and all that work is lost.
