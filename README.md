@@ -3,7 +3,7 @@ COSC 4319 Semester Project
 
 Cloning the repository (using git bash):
 1. Navigate to folder you want to store project in
-2. git clone <url>
+2. git clone [url]
 
 Typical Workflow:
 1. git pull origin          # Pulls latest repository image
