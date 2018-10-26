@@ -99,17 +99,3 @@ class Calendar {
         $this->setDates($dates);
     }
 }
-
-class CampusMap {
-    private $campusMap;
-
-    public function setCampusMap($campusMap)
-    {
-        $this->campusMap = $campusMap;
-    }
-
-    public function getCampusMap()
-    {
-        return $this->campusMap;
-    }
-}
