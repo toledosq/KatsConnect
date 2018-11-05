@@ -12,21 +12,23 @@ include_once 'header.php';
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #b3d9ff">
 <!-- Map and Calendar -->
 <div class="row">
+    <div class="col-md-1"></div>
     <!-- Map -->
-    <div class="col-sm-6">
+    <div class="col-md-5">
         <h2 align="center">Campus Map</h2>
         <iframe align="center"
-                width="600"
+                width="90%"
                 height="600"
                 src="https://maphub.net/embed/39614"
                 frameborder="0">
         </iframe>
     </div>
+    <div class="col-md-1"></div>
     <!-- Calendar -->
-    <div class="col-sm-6">
+    <div class="col-md-5">
         <h2>Academic Calendar</h2>
         <br>
         <!-- Calendar goes here -->
@@ -35,12 +37,15 @@ include_once 'header.php';
 
 <!-- KatSafe Alerts -->
 <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-6">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
         <!-- KatSafe alert goes here -->
     </div>
-    <div class="col-sm-2"></div>
+    <div class="col-md-2"></div>
 </div>
 
 </body>
 </html>
+<?php
+require 'footer.php';
+?>

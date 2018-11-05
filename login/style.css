@@ -265,16 +265,11 @@ header .nav-login a {
 .nav.navbar-nav li a {
     color: white;
 }
-
+.nav.navbar-nav li a:hover,
+.nav.navbar-nav li a:focus,
 .nav.navbar-nav > .active > a,
 .nav.navbar-nav > .active > a:hover,
 .nav.navbar-nav > .active > a:focus {
     color: white;
-    background-color: #105999;
-}
-
-.nav.navbar-nav li a:hover,
-.nav.navbar-nav li a:focus {
-    color: white;
-    background-color: #003980;
+    background-color: #3399ff;
 }
