@@ -244,6 +244,7 @@ header .nav-login a {
     font-size: 26px;
     font-family: arial;
     color: #111;
+}
 
 .registererror {
     padding-top: 14px;
@@ -261,4 +262,19 @@ header .nav-login a {
     text-align: center;
 }
 
+.nav.navbar-nav li a {
+    color: white;
+}
 
+.nav.navbar-nav > .active > a,
+.nav.navbar-nav > .active > a:hover,
+.nav.navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #105999;
+}
+
+.nav.navbar-nav li a:hover,
+.nav.navbar-nav li a:focus {
+    color: white;
+    background-color: #003980;
+}
