@@ -7,7 +7,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KatsConnect Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,10 +19,9 @@
     <nav class="navbar navbar-light" style="background-color: #004990">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.php"><img alt="KatsConnect Home" src="shsubox.png" width="55" height="49"></a>
+                <a class="navbar-brand" href="index.php"><img alt="KatsConnect Home" src="shsubox.png" style="width:50px;"></a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
                 <li><a href="#">Bulletin Board</a></li>
                 <li><a href="#">TutorKats</a></li>
                 <li><a href="#">MarketPlace</a></li>
@@ -33,10 +31,11 @@
                 <?php
                     if (!isset($_SESSION['id'])) {
                         echo '<li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+                              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>';
                     }
                     else if (isset($_SESSION['id'])) {
-                        echo '<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>';
+                        echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                              <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out </a></li>';
                     }
                 ?>
 
