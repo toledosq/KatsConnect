@@ -1,7 +1,7 @@
 <?php
-//require "includes/dbh-inc.php";
+require "includes/dbh-inc.php";
 //Starts our session and accepts later session changes.
-//session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
                 <li><a href="#">Bulletin Board</a></li>
                 <li><a href="#">TutorKats</a></li>
                 <li><a href="#">MarketPlace</a></li>
-                <li class="active"><a href="#">CampusDirect</a></li>
+                <li><a href="#">CampusDirect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php
