@@ -23,7 +23,9 @@ include_once 'header.php';
         <h2 align="center">Campus Map</h2>
         <div class="embed-responsive embed-responsive-4by3" align="center">
             <iframe class="embed-responsive-item"
-                    src="https://maphub.net/embed/39614">
+                    src="https://maphub.net/embed/39614"
+                    frameborder="1"
+                    allowfullscreen>
             </iframe>
         </div>
     </div>

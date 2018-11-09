@@ -1,13 +1,12 @@
 <?php
-require "includes/dbh-inc.php";
+//require "includes/dbh-inc.php";
 //Starts our session and accepts later session changes.
-session_start();
+//session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,16 +15,19 @@ session_start();
 
 <header>
     <!-- Navigation -->
-    <nav class="navbar navbar-light" style="background-color: #004990">
+    <nav class="navbar navbar-light" style="background-color: #004990;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.php"><img alt="KatsConnect Home" src="shsubox.png" style="width:50px;"></a>
+                <a class="navbar-brand" href="index.php" style="padding:5px">
+                    <img alt="KatsConnect Home" src="shsubox.png" style="width:80px">
+                </a>
             </div>
             <ul class="nav navbar-nav">
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#">Bulletin Board</a></li>
                 <li><a href="#">TutorKats</a></li>
                 <li><a href="#">MarketPlace</a></li>
-                <li><a href="#">CampusDirect</a></li>
+                <li><a href="campusDirect.php">CampusDirect</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php
