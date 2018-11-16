@@ -1,6 +1,7 @@
 <?php
 //This section and the one below are reusable php sections for making any new page.
 include_once 'header.php';
+include 'Calendar.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,41 +33,42 @@ include_once 'header.php';
     <div class="col-sm-2"></div>
     <!-- Calendar -->
     <div class="col-md-4">
-        <h2 align="center">Academic Calendar</h2>
+        <h2 align="center">KatSafe</h2>
         <!-- Calendar goes here -->
         <div class="embed-responsive embed-responsive-4by3" align="center">
             <iframe class="embed-responsive-item"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/q6EoRBvdVPQ"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-
+                    src="">
             </iframe>
         </div>
-        <div class="col-sm-1"></div>
     </div>
+    <div class="col-sm-1"></div>
 </div>
 <!-- KatSafe Alerts -->
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-md-6">
-        <h2 align="center">Current KatSafe Alert</h2>
-        <div class="embed-responsive embed-responsive-4by3" align="center">
-            <!-- KatSafe alert goes here -->
-            <iframe class="embed-responsive-item"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-
-            </iframe>
+<div class="row" style="margin-top: 50px;">
+    <div class="col-sm-2"></div>
+    <div class="col-md-8">
+        <h2 align="center">Academic Calendar</h2>
+        <div class="container" align="center">
+            <h3><a href="?ym=<?php echo $prev; ?>">&lt;</a> <?php echo $html_title; ?> <a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
+            <table class="table table-bordered">
+                <tr>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                </tr>
+                <?php
+                foreach ($weeks as $week) {
+                    echo $week;
+                }
+                ?>
+            </table>
         </div>
     </div>
-    <div class="col-sm-3"></div>
+    <div class="col-sm-2"></div>
 </div>
 
 </body>
